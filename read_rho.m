@@ -1,0 +1,19 @@
+function rho=read_rho(data)
+    rho=zeros(4,4,length(data(:,1))); 
+    rho(1,1,:)=data(:,4);
+    rho(1,3,:)=data(:,5);
+    rho(1,2,:)=data(:,6);
+    rho(1,4,:)=data(:,7);
+    rho(3,1,:)=data(:,8);
+    rho(3,3,:)=data(:,9);
+    rho(3,2,:)=data(:,10);
+    rho(3,4,:)=data(:,11);
+    rho(2,1,:)=data(:,12);
+    rho(2,3,:)=data(:,13);
+    rho(2,2,:)=data(:,14);
+    rho(2,4,:)=data(:,15);
+    rho(4,1,:)=data(:,16);
+    rho(4,3,:)=data(:,17);
+    rho(4,2,:)=data(:,18);
+    rho(4,4,:)=data(:,19);
+end
